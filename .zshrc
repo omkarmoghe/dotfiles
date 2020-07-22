@@ -48,7 +48,20 @@ export ZSH="$HOME/.oh-my-zsh"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rails ruby npm node vscode)
+plugins=(
+  bundler
+  gem
+  git
+  node
+  nodenv
+  npm
+  pyenv
+  rails
+  rbenv
+  ruby
+  vscode
+  zsh-syntax-highlighting
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -58,8 +71,8 @@ export EDITOR='code -n -w'
 # Aliases
 alias zshconfig="$EDITOR $HOME/.zshrc"
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+# Zsh options
+unsetopt nomatch # allow [] in text
 
 # pure theme
 autoload -U promptinit; promptinit
