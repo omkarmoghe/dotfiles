@@ -74,7 +74,7 @@ alias zshconfig="$EDITOR $HOME/.zshrc"
 unsetopt nomatch # allow [] in text
 
 # Source dotfiles
-DOTFILE_ROOT=$PWD
+export DOTFILE_ROOT="$HOME/Code/dotfiles"
 for env_file in $DOTFILE_ROOT/*/env.zsh; do
   source $env_file
 done

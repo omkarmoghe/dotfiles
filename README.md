@@ -2,6 +2,10 @@
 Dotfiles and other misc settings.
 
 ## Usage
-Fork and edit the files as needed. You definitely want to edit `git/.gitconfig`.
+Fork/clone and edit the files as needed. Set the `$DOTFILE_ROOT` env var either directly in `.zshrc` or in your shell:
+```zsh
+export DOTFILE_ROOT="$HOME/dotfiles"
+```
+You definitely want to edit `git/.gitconfig` with your info.
 
-Clone repo and run `make install` to sym link dotfiles to your `$HOME` directory. Run `make git` to sym link the `.gitconfig`.
+Run `make install` to sym link the `.zshrc` to your `$HOME` directory. Run `make gitconfig` to sym link the `.gitconfig`.
