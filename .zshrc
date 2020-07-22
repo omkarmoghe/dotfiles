@@ -53,7 +53,6 @@ plugins=(
   gem
   git
   node
-  nodenv
   npm
   pyenv
   rails
@@ -74,9 +73,19 @@ alias zshconfig="$EDITOR $HOME/.zshrc"
 # Zsh options
 unsetopt nomatch # allow [] in text
 
+# Source dotfiles
+DOTFILE_ROOT=$PWD
+for env_file in $DOTFILE_ROOT/*/env.zsh; do
+  source $env_file
+done
+for alias_file in $DOTFILE_ROOT/*/alias.zsh; do
+  source $alias_file
+done
+source $DOTFILE_ROOT/node/nodenv.zsh
+source $DOTFILE_ROOT/python/pyenv.zsh
+source $DOTFILE_ROOT/ruby/rbenv.zsh
+
 # pure theme
 autoload -U promptinit; promptinit
 PURE_PROMPT_SYMBOL="$"
 prompt pure
-
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
