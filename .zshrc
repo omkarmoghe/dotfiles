@@ -69,6 +69,7 @@ export EDITOR='code -n -w'
 
 # Aliases
 alias zshconfig="$EDITOR $HOME/.zshrc"
+alias ll="ls -alh"
 
 # Zsh options
 unsetopt nomatch # allow [] in text
