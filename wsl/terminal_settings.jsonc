@@ -119,7 +119,7 @@
     {
       "command": {
         "action": "copy",
-        "singleLine": true
+        "singleLine": false
       },
       "keys": "ctrl+c"
     },
