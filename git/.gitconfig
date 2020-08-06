@@ -1,9 +1,6 @@
 [user]
 	name = Omkar Moghe
 	email = omoghe@umich.edu
-[alias]
-	st = status
-	lg = log --pretty=format:'%Cred%h%Creset - %C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)%an%Creset' --graph --color --abbrev-commit
 [pull]
 	rebase = true
 [core]
@@ -14,4 +11,10 @@
 	process = git-lfs filter-process
 	required = true
 [log]
+	color = true
+	abbrev-commit = true
 	date = human
+[format]
+	pretty = changelog
+[pretty]
+	changelog = format:"%Cred%h%Creset - %C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)%an%Creset"
