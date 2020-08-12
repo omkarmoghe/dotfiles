@@ -69,8 +69,6 @@ export EDITOR='code -n -w'
 
 # Aliases
 alias zshconfig="$EDITOR $HOME/.zshrc"
-alias ll="ls -Alh"
-alias du="du -h"
 
 # Zsh options
 unsetopt nomatch # allow [] in text
@@ -83,9 +81,6 @@ done
 for alias_file in $DOTFILE_ROOT/*/alias.zsh; do
   source $alias_file
 done
-source $DOTFILE_ROOT/node/nodenv.zsh
-source $DOTFILE_ROOT/python/pyenv.zsh
-source $DOTFILE_ROOT/ruby/rbenv.zsh
 
 # pure theme
 autoload -U promptinit; promptinit
