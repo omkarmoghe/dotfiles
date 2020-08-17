@@ -67,9 +67,6 @@ source $ZSH/oh-my-zsh.sh
 # Preferred editor
 export EDITOR='code -n -w'
 
-# Aliases
-alias zshconfig="$EDITOR $HOME/.zshrc"
-
 # Zsh options
 unsetopt nomatch # allow [] in text
 
@@ -81,6 +78,9 @@ done
 for alias_file in $DOTFILE_ROOT/*/alias.zsh; do
   source $alias_file
 done
+
+# Aliases
+alias dotconf="$EDITOR $DOTFILE_ROOT" # Open dotfiles in preferred editor.
 
 # pure theme
 autoload -U promptinit; promptinit
