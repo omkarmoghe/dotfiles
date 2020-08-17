@@ -12,3 +12,6 @@ Use the `Makefile` to create links in your home directory:
 - Run `make zsh` to sym link the `.zshrc` to your `$HOME` directory.
 - Run `make gitconfig` to sym link the `.gitconfig`.
 - Run `make [all]` to sym link all configs.
+
+## Misc
+- Run `dotconf` to open the `$DOTFILE_ROOT` dir in your preferred editor (set via `$EDITOR`).
