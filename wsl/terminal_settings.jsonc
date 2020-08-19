@@ -14,7 +14,7 @@
   "copyOnSelect": false,
   // If enabled, formatted data is also copied to your clipboard
   "copyFormatting": false,
-  "theme": "system",
+  "theme": "dark",
   "confirmCloseAllTabs": true,
   "initialRows": 40,
   // A profile specifies a command to execute paired with information about how it should look and feel.
