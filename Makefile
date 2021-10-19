@@ -1,8 +1,10 @@
 #!/bin/zsh
 
+SHELL=/bin/zsh
+
 all: zsh gitconfig
 	@echo
-	@echo "Don't forget to \`source $(HOME)/.zshrc\` and install system packages in $(PWD)/system/packages.txt!"
+	@echo "Don't forget to \`omz reload\` and install the system packages in $(PWD)/system/packages.txt!"
 
 zsh: .zshrc
 	@echo "Backing up $(HOME)/.zshrc -> $(HOME)/.zshrc_backup"

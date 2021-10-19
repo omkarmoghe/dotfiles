@@ -59,6 +59,7 @@ plugins=(
   rbenv
   ruby
   vscode
+  zsh-autosuggestions
   zsh-syntax-highlighting
 )
 
