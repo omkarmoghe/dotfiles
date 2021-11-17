@@ -84,6 +84,7 @@ done
 alias dotconf="$EDITOR $DOTFILE_ROOT" # Open dotfiles in preferred editor.
 
 # pure theme
+fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
 PURE_PROMPT_SYMBOL="$"
 prompt pure
