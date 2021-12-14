@@ -2,7 +2,7 @@
 
 SHELL=/bin/zsh
 
-all: zsh gitconfig
+all: zsh gitconfig kitty
 	@echo
 	@echo "Don't forget to \`omz reload\` and install the system packages in $(PWD)/system/packages.txt!"
 
@@ -21,3 +21,11 @@ gitconfig: git/.gitconfig
 
 	@echo "Linking $(PWD)/git/.gitconfig -> $(HOME)/.gitconfig"
 	@ln -s $(PWD)/git/.gitconfig $(HOME)
+
+kitty: .config/kitty/kitty.conf
+	@echo "Backing up $(HOME)/.config/kitty/kitty.conf -> $(HOME)/.config/kitty/kitty_conf_backup.conf"
+	@rm -f $(HOME)/.config/kitty/kitty_conf_backup.conf
+	@mv $(HOME)/.config/kitty/kitty.conf $(HOME)/.config/kitty/kitty_conf_backup.conf
+
+	@echo "Linking $(PWD)/.config/kitty/kitty.conf -> $(HOME)/.config/kitty/kitty.conf"
+	@ln -s $(PWD)/.config/kitty/kitty.conf $(HOME)/.config/kitty
