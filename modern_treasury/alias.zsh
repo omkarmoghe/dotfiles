@@ -1,0 +1,1 @@
+alias mtc="mt console"
