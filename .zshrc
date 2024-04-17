@@ -66,6 +66,9 @@ source $ZSH/oh-my-zsh.sh
 # Preferred editor
 export EDITOR='code -n -w'
 
+# Disable Homebrew auto update
+export HOMEBREW_NO_AUTO_UPDATE=1
+
 # Zsh options
 unsetopt nomatch # allow [] in text
 
