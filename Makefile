@@ -14,6 +14,6 @@ gitconfig: git/.gitconfig
 	@echo "Linking $(PWD)/git/.gitconfig -> $(HOME)/.gitconfig"
 	@ln -sf $(PWD)/git/.gitconfig $(HOME)
 
-kitty: .config/kitty/kitty.conf
-	@echo "Linking $(PWD)/.config/kitty/kitty.conf -> $(HOME)/.config/kitty/kitty.conf"
-	@ln -sf $(PWD)/.config/kitty/kitty.conf $(HOME)/.config/kitty
+kitty: kitty/kitty.conf
+	@echo "Linking $(PWD)/kitty/kitty.conf -> $(HOME)/.config/kitty/kitty.conf"
+	@ln -sf $(PWD)/kitty/kitty.conf $(HOME)/.config/kitty
