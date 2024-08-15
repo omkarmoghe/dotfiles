@@ -74,9 +74,13 @@ unsetopt nomatch # allow [] in text
 
 # Source dotfiles
 export DOTFILE_ROOT="$HOME/Code/dotfiles"
+
+# Load env files
 for env_file in $DOTFILE_ROOT/*/env.zsh; do
   source $env_file
 done
+
+# Load alias files
 for alias_file in $DOTFILE_ROOT/*/alias.zsh; do
   source $alias_file
 done
