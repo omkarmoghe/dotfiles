@@ -30,6 +30,11 @@ config.font = wezterm.font("JetBrains Mono")
 config.font_size = 14.0
 config.initial_rows = 60
 config.initial_cols = 140
+config.default_cursor_style = "SteadyBar"
+config.enable_scroll_bar = true
+config.line_height = 1.05
+config.hide_tab_bar_if_only_one_tab = true
+config.tab_max_width = 32
 
 -- END CONFIG
 
