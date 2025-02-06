@@ -30,15 +30,27 @@ config.font_size = 14.0
 config.initial_rows = 60
 config.initial_cols = 140
 config.default_cursor_style = "SteadyBar"
+config.cursor_thickness = 4
 config.enable_scroll_bar = true
 config.line_height = 1.05
 config.hide_tab_bar_if_only_one_tab = true
 config.tab_max_width = 32
+config.keys = {
+  -- Jump words
+  {key="LeftArrow", mods="OPT", action=wezterm.action.SendString("\x1bb")},
+  {key="RightArrow", mods="OPT", action=wezterm.action.SendString("\x1bf")},
+  -- Beginning/end of line
+  {key="LeftArrow", mods="CMD", action=wezterm.action.SendKey({key="A", mods="CTRL"})},
+  {key="RightArrow", mods="CMD", action=wezterm.action.SendKey({key="E", mods="CTRL"})},
+}
+
+config.hyperlink_rules = wezterm.default_hyperlink_rules()
 
 config.color_schemes = {
   ['Night Owl'] = {
     foreground = '#d6deeb',
     background = '#011627',
+    selection_fg = '#d6deeb',
     selection_bg = '#1b90dd',
     ansi = {
       "#011627",
@@ -64,6 +76,7 @@ config.color_schemes = {
   ['Light Owl'] = {
     foreground = '#403f53',
     background = '#F6F6F6',
+    selection_fg = '#F6F6F6',
     selection_bg = '#1b90dd',
     ansi = {
       "#403f53",
