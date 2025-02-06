@@ -17,7 +17,3 @@ gitconfig: git/.gitconfig
 kittyconfig: kitty/kitty.conf
 	@echo "Linking $(PWD)/kitty/kitty.conf -> $(HOME)/.config/kitty/kitty.conf"
 	@ln -sf $(PWD)/kitty/kitty.conf $(HOME)/.config/kitty
-
-weztermconfig: wezterm/.wezterm.lua
-	@echo "Linking $(PWD)/wezterm/.wezterm.lua -> $(HOME)/.wezterm.lua"
-	@ln -sf $(PWD)/wezterm/.wezterm.lua $(HOME)/.wezterm.lua
