@@ -2,7 +2,8 @@
 	name = Omkar Moghe
 	email = theomkarmoghe@gmail.com
 [pull]
-	rebase = true
+	rebase = false
+	ff = only
 [core]
 	autocrlf = input
 	pager = bat
@@ -20,4 +21,10 @@
 [pretty]
 	changelog = format:"%Cred%h%Creset - %C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)%an%Creset"
 [init]
-	defaultBranch = main
+	defaultbranch = main
+[push]
+	default = current
+[rerere]
+	enabled = true
+[rebase]
+	autoStash = true
