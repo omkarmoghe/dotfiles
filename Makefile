@@ -13,13 +13,3 @@ zshrc: .zshrc
 gitconfig: git/.gitconfig
 	@echo "Linking git/.gitconfig -> $(HOME)/.gitconfig"
 	@ln -sf $(PWD)/git/.gitconfig $(HOME)
-
-kittyconfig: kitty/kitty.conf
-	@echo "Linking kitty/kitty.conf -> $(HOME)/.config/kitty/kitty.conf"
-	@mkdir -p $(HOME)/.config
-	@ln -sf $(PWD)/kitty/kitty.conf $(HOME)/.config/kitty
-
-# ghosttyconfig: ghostty/config
-# 	@echo "Linking ghostty/config -> $(HOME)/.config/ghostty/config"
-# 	@mkdir -p $(HOME)/.config
-# 	@ln -sf $(PWD)/ghostty/config $(HOME)/.config/ghostty
