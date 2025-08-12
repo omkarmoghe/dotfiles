@@ -6,7 +6,7 @@
 	ff = only
 [core]
 	autocrlf = input
-	pager = bat
+	pager = batcat
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f

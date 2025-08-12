@@ -93,6 +93,3 @@ fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
 PURE_PROMPT_SYMBOL="$"
 prompt pure
-export MONOREPO_PATH="/Users/omkarmoghe/Code/mt/monorepo"
-
-source /Users/omkarmoghe/Code/mt/monorepo/dev/setup/.mt.zshrc
