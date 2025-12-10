@@ -1,4 +1,4 @@
-zsh
+fish
 bat
 fzf
 ripgrep
