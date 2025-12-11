@@ -1,7 +1,6 @@
 fishconfig: fish/config.fish
-	@echo "Linking fish/config.fish -> $(HOME)/.config/fish/config.fish"
-	@mkdir -p $(HOME)/.config/fish
-	@ln -sf $(PWD)/fish/config.fish $(HOME)/.config/fish/
+	@echo "Sourcing fish/config.fish..."
+	@fish $(PWD)/fish/config.fish
 
 gitconfig: git/.gitconfig
 	@echo "Linking git/.gitconfig -> $(HOME)/.gitconfig"

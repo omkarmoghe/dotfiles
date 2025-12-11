@@ -1,3 +1,5 @@
+#!/usr/bin/env fish
+
 # Git
 alias --save gst "git status"
 alias --save gco "git checkout"
