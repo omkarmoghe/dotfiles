@@ -15,6 +15,8 @@ alias --save glgg "git log --graph"
 alias --save grs "git restore"
 alias --save grh "git reset"
 alias --save gd "git diff"
+alias --save gf "git fetch"
+alias --save grb "git rebase"
 
 # Ruby / Rails
 alias --save bifi "bundle install --full-index"
